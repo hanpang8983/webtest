@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+</head>
+<link rel="stylesheet" href="css/index_css.css" type="text/css" >
+
+<script type="text/javascript" src="js/jquery-2.1.4.js"></script>
+<script>
+	var bool=false;
+	function yidong(){
+
+		if(bool){
+			$("#zuobian").animate({left:'-170px'},"fast");
+			document.getElementById("jiantou").src="images/右箭头.png";
+		}else{
+			$("#zuobian").animate({left:'+0px'},"fast");
+			document.getElementById("jiantou").src="images/左箭头.png";
+		}
+		bool=!bool;
+	}
+	
+	function showLoginDiv(){
+		document.getElementById("mb").style.display="block";
+		document.getElementById("l").style.display="block";
+	}
+	
+	function hideLoginDiv(){
+		
+		document.getElementById("mb").style.display="none";
+		document.getElementById("l").style.display="none";
+	}
+	
+	function topAover(){
+		$(this).addClass("bianse");
+		$(this).addClass("shadow1");
+		//$(this).css("background-color","#99C7E6");
+		
+		//$(this).children("a .topAside").slideDown("slow");
+		//$(this).next("div").slideDown("slow");
+	}
+	
+	function topAout(){
+		$(this).removeClass("bianse");
+		$(this).removeClass("shadow1");
+		//$(this).css("background-color","#C69");
+		
+		//$(this).children("a .topAside").slideUp("slow");
+		//$(this).next("div").slideUp("slow");
+		
+	}
+	
+	function topblockover(){
+		$(this).children(".topAside").css("display","block");
+	}
+	
+	function topblockout(){
+		$(this).children(".topAside").css("display","none");
+		
+	}
+	
+	$().ready(function(e) {
+        var as=document.getElementsByClassName("topblock");
+		for(var i=0;i<as.length;i++){
+			as.item(i).addEventListener("mouseover",topblockover,false);
+			as.item(i).addEventListener("mouseout",topblockout,false);
+		}
+		var topa=document.getElementsByClassName("topA");
+		for(var i=0;i<topa.length;i++){
+			topa.item(i).addEventListener("mouseover",topAover,false);
+			topa.item(i).addEventListener("mouseout",topAout,false);
+		
+		}
+    });
+
+</script>
+
+<body>
+	<div id="zuobian" class="Ldiv shadow1"  >	
+    	 	
+    <img id="jiantou" src="images/右箭头.png"  onClick="yidong()" />
+    </div>
+    <div class="TopDiv shadow1">
+    	<div class="topblock">
+        	<a href="#" class="topA" onMouseOver="a()" >主页</a>
+
+        </div>
+        <div class="topblock">
+        	<a href="#" class="topA">分类</a>
+        	<div class="topAside">
+            	<a href="#" class="topA" onMouseOver="a()" >按时大大</a>
+                <a href="#" class="topA" onMouseOver="a()" >暗示法大师的法师的法师</a>
+                <a href="#" class="topA" onMouseOver="a()" >大概分该</a>
+            </div>
+        </div>
+        <div class="topblock">
+        	<a href="#" class="topA">留言</a>
+            <div class="topAside">
+            	<a href="#" class="topA" onMouseOver="a()" >阿斯顿噶三顿饭</a>
+                <a href="#" class="topA" onMouseOver="a()" >阿斯顿噶三顿饭</a>
+                <a href="#" class="topA" onMouseOver="a()" >主和规范化佛顶骨页</a>
+            </div>
+        </div>
+        <div class="topblock">
+        	<a href="#" class="topA">关于我们</a>
+
+        </div>
+        <div class="topblock">
+        	<a href="#" class="topA">送水电话</a>
+            <div class="topAside">
+            	<a href="#" class="topA" onMouseOver="a()" >大公会</a>
+                <a href="#" class="topA" onMouseOver="a()" >该倒是发个</a>
+                <a href="#" class="topA" onMouseOver="a()" >刮风的该</a>
+            </div>
+        </div>
+        
+        <div class="topA topALogin shadow1"><a href="#" class="toplogin" onClick="showLoginDiv()">点击登录</a></div>
+    </div>
+    <!--登录块-->
+    <div id="mb" class="mengban" onClick="hideLoginDiv()"></div>
+    <div id="l" class="login" ></div>
+	<!--登录块-->
+    <a class="maoA backBottomPosition" href="#bottom">跳到底部</a>
+    <a class="maoA backTopPosition" href="#">跳到顶部</a>
+    <div class="content shadowblack" >
+        <div class="grayblock">
+        	<div class="contentblock">
+            	<div class="floatblock">
+            	<div class="contHead">
+            		<hr style=" width:998px"/>
+            		<p>XXXX年XX月XX日</p>
+            		<hr/>
+                	<h1>文字</h1>
+                    <hr/>
+                    <p>文字</p>
+                </div>
+               	<div class="contBody">
+                	
+                	<img src="images/152ac65c10385343937c69b29313b07ecb8088f6.jpg" class=" contImg"/>
+                    <div class="contText">
+                    	<a>asdadasdasdasdsad</a>
+                    <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p></div>
+             	</div>
+                </div>
+            </div>
+
+       		<div class="contentblock">
+            	<div class="floatblock">
+            	<div class="contHead">
+            		<hr style=" width:998px"/>
+            		<p>XXXX年XX月XX日</p>
+            		<hr/>
+                	<h1>文字</h1>
+                    <hr/>
+                    <p>文字</p>
+                </div>
+               	<div class="contBody">
+                	
+                	<img src="images/152ac65c10385343937c69b29313b07ecb8088f6.jpg" class=" contImg"/>
+                    <div class="contText">
+                    	<a>asdadasdasdasdsad</a>
+                    <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p></div>
+             	</div>
+                </div>
+            </div>
+            <div class="contentblock">
+            	<div class="floatblock">
+            	<div class="contHead">
+            		<hr style=" width:998px"/>
+            		<p>XXXX年XX月XX日</p>
+            		<hr/>
+                	<h1>文字</h1>
+                    <hr/>
+                    <p>文字</p>
+                </div>
+               	<div class="contBody">
+                	
+                	<img src="images/152ac65c10385343937c69b29313b07ecb8088f6.jpg" class=" contImg"/>
+                    <div class="contText">
+                    	<a>asdadasdasdasdsad</a>
+                    <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p></div>
+             	</div>
+                </div>
+            </div>
+            <div class="contentblock">
+            	<div class="floatblock">
+            	<div class="contHead">
+            		<hr style=" width:998px"/>
+            		<p>XXXX年XX月XX日</p>
+            		<hr/>
+                	<h1>文字</h1>
+                    <hr/>
+                    <p>文字</p>
+                </div>
+               	<div class="contBody">
+                	
+                	<img src="images/152ac65c10385343937c69b29313b07ecb8088f6.jpg" class=" contImg"/>
+                    <div class="contText">
+                    	<a>asdadasdasdasdsad</a>
+                    <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p></div>
+             	</div>
+                </div>
+            </div>
+            <hr class="hrLong"/>
+        </div>
+		
+    </div>
+</body>
+<a name="bottom"></a>
+</html>

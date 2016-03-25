@@ -1,0 +1,202 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+    margin: 0px;
+    margin-left: 30px;
+    margin-top: 50px;
+    height: 100%;
+    background-image: url(../images/152ac65c10385343937c69b29313b07ecb8088f6.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed
+}
+
+.Ldiv {
+    width: 200px;
+    height: 100%;
+    background-color: #E9E8EC;
+    z-index: 70;
+    position: fixed;
+    top: 0px;
+    left: -170px;
+    background-image: url(../images/hitTable.gif);
+    background-repeat: no-repeat;
+    background-size: 170px 136px
+}
+
+.TopDiv {
+    width: 1400px;
+    height: 50px;
+    background-color: #999;
+    position: fixed;
+    top: 0px;
+    z-index: 60
+}
+
+.login {
+    width: 300px;
+    height: 600px;
+    background-color: #6F6;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    margin-top: -300px;
+    margin-left: -150px;
+    z-index: 3;
+    display: none
+}
+
+.mengban {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    background-color: #666;
+    opacity: 0.8;
+    z-index: 2;
+    display: none;
+}
+
+.topA {
+    height: 30px;
+    padding-left: 15px;
+    padding-top: 14px;
+    padding-bottom: 6px;
+    padding-right: 15px;
+    background-color: #000;
+    display: block;
+    text-decoration: none;
+    font-family: "楷体";
+    color: #FFF
+}
+
+.topAfloat {
+    float: left;
+}
+
+.topALogin {
+    position: fixed;
+    top: 0px;
+    right: 30px;
+}
+
+.toplogin {
+    text-decoration: none;
+    font: "楷体";
+    color: #FFF;
+}
+
+.topblock {
+    padding-bottom: 5px;
+    background-color: #FC6;
+    float: left
+}
+
+.topAside {
+    display: none;
+    position: absolute
+}
+
+.bianse {
+    background-color: #CCCCCC
+}
+
+#jiantou {
+    float: right;
+    width: 30px;
+    height: 100%;
+    cursor: pointer
+}
+
+.content {
+    width: 1000px;
+    height: 100%;
+    background-color: #FFF;
+    margin: 0px auto
+}
+
+.maoA {
+    display: block;
+    width: 60px;
+    height: 25px;
+    font: 15px "楷体";
+    color: #FFF;
+    background-color: #375B39;
+    text-decoration: none;
+    padding-top: 8px;
+}
+
+.backBottomPosition {
+    position: fixed;
+    right: 50px;
+    bottom: 0px;
+    z-index: 45
+}
+
+.backTopPosition {
+    position: fixed;
+    right: 50px;
+    top: 50px;
+    z-index: 45
+}
+
+.shadow1 {
+    box-shadow: 0 0 10px #0066FF
+}
+
+.shadowblack {
+    box-shadow: 0 0 10px #666666
+}
+
+.grayblock {
+    width: 200px;
+    height: 100%;
+    background-color: #E6E6E6
+}
+
+p {
+    font-family: "楷体"
+}
+
+.hrLong {
+    width: 998px
+}
+
+.contentblock {
+    text-align: center;
+    height: 300px
+}
+
+.floatblock {
+    position: absolute;
+    width: 1000px
+}
+
+.contHead {
+    width: 200px;
+    height: 300px;
+    float: left
+}
+
+.contBody {
+    width: 770px;
+    height: 270px;
+    float: left;
+    padding-top: 30px;
+    padding-left: 30px
+}
+
+.contImg {
+    width: 375px;
+    height: 250px;
+    float: left
+}
+
+.contText {
+    width: 300px;
+    height: 230px;
+    float: left;
+    margin-left: 30px;
+    overflow: hidden
+}
